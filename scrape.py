@@ -104,9 +104,14 @@ class JobPostingParser:
         }
 
 
-scraper = JobPostingScraper()
-job_postings = scraper.getRawJobPostings()
+def main():
+    scraper = JobPostingScraper()
+    job_postings = scraper.getRawJobPostings()
 
-jobs = [JobPostingParser(x).getJob() for x in job_postings]
+    jobs = [JobPostingParser(x).getJob() for x in job_postings]
+    
+    
+    #print(json.dumps(jobs, indent=4)) 
 
-print(json.dumps(jobs, indent=4))
+if __name__ == "__main__":
+    main()
