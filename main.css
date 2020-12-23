@@ -1,0 +1,28 @@
+img {
+    float: left;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+
+/* .navbar-nav>li {
+    padding-left: 70px;
+    padding-right: 30px;
+} */
+
+
+/* .navbar-nav>li {
+    margin-left: 30px;
+    margin-right: 70;
+} */
